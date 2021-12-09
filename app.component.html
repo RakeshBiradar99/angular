@@ -1,0 +1,41 @@
+<!--<h1>Hello</h1>
+<h1>{{getName("anu")}}</h1> 
+<h4 *ngFor="let name of names">
+{{name}}
+</h4> 
+<div [ngSwitch]="switchValue">
+    <div *ngSwitchCase="1">Value passed is : 1</div>
+    <div *ngSwitchCase="2">Value passed is : 2</div>
+    <div *ngSwitchCase="3">Value passed is : 3</div>
+    <div *ngSwitchCase="4">Value passed is : 4</div>
+    <div *ngSwitchDefault>Default</div>
+</div> 
+<h1 [ngClass]="'changeColor'">Hi</h1>
+<h1 [ngClass]="'changeColor bgColor'">hello</h1>
+<h1 [ngClass]="styleColor">How are you</h1>
+<h1 [ngClass]="styleColor==='font'?'bgColor':'changeColor'">I'm good</h1>
+
+<h1 [ngStyle]="{'color':'yellow'}">HI</h1>
+<h1 [ngStyle]="{'color':textCol}">HI</h1>
+<h1 [ngStyle]="'color':bgColor==='pink'?'blue':'pink'">HI</h1>
+-->
+
+<!-- <hi appFirst>HI</hi> -->
+<p>pipe</p>
+<h1>{{'UPPER'| lowercase}}</h1>
+<h1>{{'lower'| uppercase}}</h1>
+<h1>{{'12'| currency}}</h1>
+<h1>{{dateExample| date}}</h1>
+<h1>{{'0.80'| percent}}</h1>
+---------------------------------------------------
+<p>parametrized pipe</p>
+<h1>{{'12'| currency :'INR'}}</h1>
+<h1>{{dateExample| date:'long'}}</h1>
+<h1>{{dateExample| date:'medium'}}</h1>
+<h1>{{dateExample| date:'dd/MM/yy'}}</h1>
+---------------------------------------------------
+<p>chain pipe</p>
+
+<h1>{{dateExample| date |uppercase}}</h1>
+<h1>{{'12'| currency:"USD"|lowercase}}</h1>
+
